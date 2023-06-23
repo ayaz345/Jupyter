@@ -41,9 +41,7 @@ def euclidean_distance(q, p):
 
     if len(q) != 2 or len(p) != 2:
         raise ValueError(
-            "expected dimensions to be 2-d, instead got p:{} and q:{}".format(
-                len(q), len(p)
-            )
+            f"expected dimensions to be 2-d, instead got p:{len(q)} and q:{len(p)}"
         )
 
     for num in q + p:
